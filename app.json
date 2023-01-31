@@ -6,6 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "book-app-redirect",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -18,9 +19,11 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.dereje.bookApp",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.dereje.bookApp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
