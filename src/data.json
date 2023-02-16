@@ -1,0 +1,765 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 14,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "UUHuAAAAMAAJ",
+      "etag": "yok+xlDmrqg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/UUHuAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Self-help",
+        "subtitle": "Stories",
+        "authors": [
+          "Lorrie Moore"
+        ],
+        "publisher": "Plume",
+        "publishedDate": "1986",
+        "description": "These ten short stories focus on women who are on the brink of loneliness--their mothers are dying, their husbands and lovers are leaving them--and who face their disappointments with anxiety laced with ironic humor",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015056268595"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 184,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 12,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.6.3.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=UUHuAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=UUHuAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.uk/books?id=UUHuAAAAMAAJ&q=intitle:self-help+thinking+life+coding+fiction&dq=intitle:self-help+thinking+life+coding+fiction&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.co.uk/books?id=UUHuAAAAMAAJ&dq=intitle:self-help+thinking+life+coding+fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Self_help.html?hl=&id=UUHuAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "GB",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "GB",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=UUHuAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "These ten short stories focus on women who are on the brink of loneliness--their mothers are dying, their husbands and lovers are leaving them--and who face their disappointments with anxiety laced with ironic humor"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "OoG9AAAAIAAJ",
+      "etag": "RXacT3WvreM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/OoG9AAAAIAAJ",
+      "volumeInfo": {
+        "title": "Goodbye Hangovers, Hello Life",
+        "subtitle": "Self-help for Women",
+        "authors": [
+          "Jean Kirkpatrick"
+        ],
+        "publisher": "Atheneum Books",
+        "publishedDate": "1986",
+        "description": "The founder of Women for Sobriety explains the self-help system she devised to cure herself of alcoholism and discusses the special problems of the woman alcoholic and how to overcome them",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "STANFORD:36105037944936"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 250,
+        "printType": "BOOK",
+        "categories": [
+          "Health & Fitness"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=OoG9AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=OoG9AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.uk/books?id=OoG9AAAAIAAJ&q=intitle:self-help+thinking+life+coding+fiction&dq=intitle:self-help+thinking+life+coding+fiction&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.co.uk/books?id=OoG9AAAAIAAJ&dq=intitle:self-help+thinking+life+coding+fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Goodbye_Hangovers_Hello_Life.html?hl=&id=OoG9AAAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "GB",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "GB",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=OoG9AAAAIAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The founder of Women for Sobriety explains the self-help system she devised to cure herself of alcoholism and discusses the special problems of the woman alcoholic and how to overcome them"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QDrbBzrMCCwC",
+      "etag": "jKcnr7bzT5I",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/QDrbBzrMCCwC",
+      "volumeInfo": {
+        "title": "Self-help and Popular Religion in Modern American Culture",
+        "subtitle": "An Interpretive Guide",
+        "authors": [
+          "Roy M. Anker"
+        ],
+        "publisher": "Greenwood Publishing Group",
+        "publishedDate": "1999",
+        "description": "The second of two volumes on the relationship between popular religion and the self-help tradition in American culture, this book continues chronologically and spans from Romanticism and the Gilded Age through Norman Vincent Peale and Robert Schuller.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780313222498"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0313222495"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 191,
+        "printType": "BOOK",
+        "categories": [
+          "Religion"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QDrbBzrMCCwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QDrbBzrMCCwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.uk/books?id=QDrbBzrMCCwC&printsec=frontcover&dq=intitle:self-help+thinking+life+coding+fiction&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=QDrbBzrMCCwC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=QDrbBzrMCCwC"
+      },
+      "saleInfo": {
+        "country": "GB",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 62,
+          "currencyCode": "GBP"
+        },
+        "retailPrice": {
+          "amount": 40.3,
+          "currencyCode": "GBP"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=QDrbBzrMCCwC&rdid=book-QDrbBzrMCCwC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 62000000,
+              "currencyCode": "GBP"
+            },
+            "retailPrice": {
+              "amountInMicros": 40300000,
+              "currencyCode": "GBP"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "GB",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.uk/books/download/Self_help_and_Popular_Religion_in_Modern-sample-epub.acsm?id=QDrbBzrMCCwC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.uk/books/download/Self_help_and_Popular_Religion_in_Modern-sample-pdf.acsm?id=QDrbBzrMCCwC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QDrbBzrMCCwC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The second of two volumes on the relationship between popular religion and the self-help tradition in American culture, this book continues chronologically and spans from Romanticism and the Gilded Age through Norman Vincent Peale and ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "f0x3LZNdmQUC",
+      "etag": "pDy6QWihJbQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/f0x3LZNdmQUC",
+      "volumeInfo": {
+        "title": "Rock-a-by Baby",
+        "subtitle": "Feminism, Self Help, and Postpartum Depression",
+        "authors": [
+          "Verta A. Taylor"
+        ],
+        "publisher": "Psychology Press",
+        "publishedDate": "1996",
+        "description": "First Published in 1996. Routledge is an imprint of Taylor & Francis, an informa company.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "041591292X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780415912921"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 262,
+        "printType": "BOOK",
+        "categories": [
+          "Social Science"
+        ],
+        "averageRating": 3,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.7.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=f0x3LZNdmQUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=f0x3LZNdmQUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.uk/books?id=f0x3LZNdmQUC&printsec=frontcover&dq=intitle:self-help+thinking+life+coding+fiction&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.co.uk/books?id=f0x3LZNdmQUC&dq=intitle:self-help+thinking+life+coding+fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Rock_a_by_Baby.html?hl=&id=f0x3LZNdmQUC"
+      },
+      "saleInfo": {
+        "country": "GB",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "GB",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.uk/books/download/Rock_a_by_Baby-sample-pdf.acsm?id=f0x3LZNdmQUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=f0x3LZNdmQUC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "First Published in 1996. Routledge is an imprint of Taylor &amp; Francis, an informa company."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Yv8Qv5Zg0JUC",
+      "etag": "wuLwWOsodWY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Yv8Qv5Zg0JUC",
+      "volumeInfo": {
+        "title": "Self-help and Popular Religion in Early American Culture",
+        "subtitle": "An Interpretive Guide",
+        "authors": [
+          "Roy M. Anker"
+        ],
+        "publisher": "Greenwood Publishing Group",
+        "publishedDate": "1999",
+        "description": "Focuses on early America, from the Protestant Ethic and Puritan New England through Revivalism and American Romanticism.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0313311366"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780313311369"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 262,
+        "printType": "BOOK",
+        "categories": [
+          "Social Science"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.5.7.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Yv8Qv5Zg0JUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Yv8Qv5Zg0JUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.uk/books?id=Yv8Qv5Zg0JUC&printsec=frontcover&dq=intitle:self-help+thinking+life+coding+fiction&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=Yv8Qv5Zg0JUC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Yv8Qv5Zg0JUC"
+      },
+      "saleInfo": {
+        "country": "GB",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 64,
+          "currencyCode": "GBP"
+        },
+        "retailPrice": {
+          "amount": 41.6,
+          "currencyCode": "GBP"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=Yv8Qv5Zg0JUC&rdid=book-Yv8Qv5Zg0JUC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 64000000,
+              "currencyCode": "GBP"
+            },
+            "retailPrice": {
+              "amountInMicros": 41600000,
+              "currencyCode": "GBP"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "GB",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.uk/books/download/Self_help_and_Popular_Religion_in_Early-sample-epub.acsm?id=Yv8Qv5Zg0JUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.uk/books/download/Self_help_and_Popular_Religion_in_Early-sample-pdf.acsm?id=Yv8Qv5Zg0JUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Yv8Qv5Zg0JUC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Focuses on early America, from the Protestant Ethic and Puritan New England through Revivalism and American Romanticism."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "hm5HAAAAMAAJ",
+      "etag": "0k+hjDv2pIo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/hm5HAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Cancer and Self-help",
+        "subtitle": "Bridging the Troubled Waters of Childhood Illness",
+        "authors": [
+          "Mark A. Chesler",
+          "Barbara K. Chesney"
+        ],
+        "publisher": "Univ of Wisconsin Press",
+        "publishedDate": "1995",
+        "description": "Written for and about the special population of parents of children with cancer, this book explores the remarkable effectiveness of self-help groups and profiles their rapid rise as a resource complementing traditional health care. Mark A. Chesler and Barbara K. Chesney draw on their own experience as members of such groups and on a combined thirty years of research on self-help. They provide essential information for families of children with cancer (and other chronic life-threatening illnesses), for health-care professionals working with them, and for scholars of self-help and psychosocial processes in health care--including explanations of how self-help groups function, why they are effective, and how they can be created and maintained. The authors show that, through self-help groups, parents can learn coping skills, find personal affirmation and mutual support, and share the wisdom gained from their experiences. Chesler and Chesney find that group participation improves parents' coping capabilities in the face of terrible odds and fosters an increased sense of empowerment as they care and advocate for their children in an increasingly complex health care system. Cancer and Self-Help distills the experiences of more than fifty self-help groups and their members over twelve years. It also places cancer self-help groups in a larger context, comparing them to other social movement organizations and to other strategies for personal coping or change. The book includes the voices of individual parents and professionals recounting their experiences; detailed examples of group activities, programs, operating procedures, and organizational structures; fundamental, how-to information on forming a self-help group; comments on the roles and dilemmas of health care professionals in these groups and on the medical care system as a whole, and interpretations of these individual and organizational dynamics.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015050186900"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 420,
+        "printType": "BOOK",
+        "categories": [
+          "Medical"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=hm5HAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=hm5HAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.uk/books?id=hm5HAAAAMAAJ&q=intitle:self-help+thinking+life+coding+fiction&dq=intitle:self-help+thinking+life+coding+fiction&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.co.uk/books?id=hm5HAAAAMAAJ&dq=intitle:self-help+thinking+life+coding+fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Cancer_and_Self_help.html?hl=&id=hm5HAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "GB",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "GB",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=hm5HAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Written for and about the special population of parents of children with cancer, this book explores the remarkable effectiveness of self-help groups and profiles their rapid rise as a resource complementing traditional health care."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "IHuEQgAACAAJ",
+      "etag": "iAFT21TGkN0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/IHuEQgAACAAJ",
+      "volumeInfo": {
+        "title": "Women and Self-help Culture",
+        "subtitle": "Reading Between the Lines",
+        "authors": [
+          "Wendy Simonds"
+        ],
+        "publishedDate": "1992",
+        "description": "Wendy Simonds examines what the phenomenon of self-help reading reveals about gender relations in contemporary American culture. She interviews women readers and editors of self-help books, and looks at bestsellers since 1963--those offering advice about managing relationships, enhancing sexuality, developing self-esteem, becoming assertive, and improving spiritual life--including Betty Friedan's The Feminine Mystique, Robin Norwood's Women Who Love Too Much, Robert Bly's Iron John, and Alex Comfort's The Joy of Sex. She argues that the genre's continued success is indicative of readers' search for meaning. Drawing on feminist theory and critical cultural studies, Simonds explores the appeal of self-help books, and asks what readers are making of them. She looks at how these books affect the social construction, cultural consumption, and transmission of ideas about gender and the self. She includes discussions of readers' assessments of the meaning and effectiveness of self-help reading; the interaction between religious and therapeutic ideology in the activity of reading this genre; and creators'--both authors' and editors'--views of their work. Are self-help books politically conservative or liberating, feminist or anti-feminist? Simonds finds that the genre tends to recommend individual change, not social change; yet it can also validate caring and can encourage a sense of community among women. In the end, though, these books provide \"only an illusory cure for what ails us, collectively, as a culture.\"",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0813518342"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780813518343"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 267,
+        "printType": "BOOK",
+        "categories": [
+          "Social Science"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "en",
+        "previewLink": "http://books.google.co.uk/books?id=IHuEQgAACAAJ&dq=intitle:self-help+thinking+life+coding+fiction&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.co.uk/books?id=IHuEQgAACAAJ&dq=intitle:self-help+thinking+life+coding+fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Women_and_Self_help_Culture.html?hl=&id=IHuEQgAACAAJ"
+      },
+      "saleInfo": {
+        "country": "GB",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "GB",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=IHuEQgAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "She looks at how these books affect the social construction, cultural consumption, and transmission of ideas about gender and the self."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "j8zgAAAAMAAJ",
+      "etag": "UJXqvPTZkgE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/j8zgAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Improving LCSH for Use in Online Catalogs",
+        "subtitle": "Exercises for Self-help with a Selection of Background Readings",
+        "authors": [
+          "Pauline Atherton Cochrane"
+        ],
+        "publisher": "Littleton, Colo. : Libraries Unlimited, Incorporated",
+        "publishedDate": "1986",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015010850124"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 370,
+        "printType": "BOOK",
+        "categories": [
+          "Analyse documentaire - Problèmes et exercices"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=j8zgAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=j8zgAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.uk/books?id=j8zgAAAAMAAJ&q=intitle:self-help+thinking+life+coding+fiction&dq=intitle:self-help+thinking+life+coding+fiction&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.co.uk/books?id=j8zgAAAAMAAJ&dq=intitle:self-help+thinking+life+coding+fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Improving_LCSH_for_Use_in_Online_Catalog.html?hl=&id=j8zgAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "GB",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "GB",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=j8zgAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "b2xHAAAAMAAJ",
+      "etag": "Kl3jlQ04A34",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/b2xHAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Peer Counseling and Self-help Groups on Campus",
+        "authors": [
+          "Norman S. Giddan",
+          "Michael J. Austin"
+        ],
+        "publisher": "Charles C Thomas Pub Limited",
+        "publishedDate": "1982",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015016204714"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 212,
+        "printType": "BOOK",
+        "categories": [
+          "Social Science"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.4.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=b2xHAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=b2xHAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.uk/books?id=b2xHAAAAMAAJ&q=intitle:self-help+thinking+life+coding+fiction&dq=intitle:self-help+thinking+life+coding+fiction&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.co.uk/books?id=b2xHAAAAMAAJ&dq=intitle:self-help+thinking+life+coding+fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Peer_Counseling_and_Self_help_Groups_on.html?hl=&id=b2xHAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "GB",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "GB",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=b2xHAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "S_-gD-CErAQC",
+      "etag": "hqCfCorRmMQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/S_-gD-CErAQC",
+      "volumeInfo": {
+        "title": "Self-help Support Groups for Older Women",
+        "subtitle": "Rebuilding Elder Networks Through Personal Empowerment",
+        "authors": [
+          "Lenard W. Kaye"
+        ],
+        "publisher": "Taylor & Francis US",
+        "publishedDate": "1997",
+        "description": "First published in 1997. Routledge is an imprint of Taylor & Francis, an informa company.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1560324619"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781560324614"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 180,
+        "printType": "BOOK",
+        "categories": [
+          "Social Science"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.6.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=S_-gD-CErAQC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=S_-gD-CErAQC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.uk/books?id=S_-gD-CErAQC&dq=intitle:self-help+thinking+life+coding+fiction&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.co.uk/books?id=S_-gD-CErAQC&dq=intitle:self-help+thinking+life+coding+fiction&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Self_help_Support_Groups_for_Older_Women.html?hl=&id=S_-gD-CErAQC"
+      },
+      "saleInfo": {
+        "country": "GB",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "GB",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=S_-gD-CErAQC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "First published in 1997. Routledge is an imprint of Taylor &amp; Francis, an informa company."
+      }
+    }
+  ]
+}

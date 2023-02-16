@@ -1,30 +1,21 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\ddest\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add expo-browser
+  /usr/bin/node /usr/share/yarn/bin/yarn.js
 
 PATH: 
-  C:\Users\ddest\Documents\dev\book-app\node_modules\.bin;C:\Users\ddest\Documents\dev\book-app\node_modules\.bin;C:\Users\ddest\Documents\dev\node_modules\.bin;C:\Users\ddest\Documents\node_modules\.bin;C:\Users\ddest\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Users\ddest\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ddest\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\msys64\mingw64\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs;C:\Users\ddest\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\ddest\AppData\Local\Programs\Python\Python39;C:\Users\ddest\AppData\Local\Microsoft\WindowsApps;C:\Users\ddest\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ddest\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+  /home/dereje/.vscode-server/bin/e2816fe719a4026ffa1ee0189dc89bdfdbafb164/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/ddest/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/ddest/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/ddest/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ddest/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ddest/AppData/Roaming/npm:/mnt/c/Users/ddest/AppData/Local/Yarn/bin:/mnt/c/Program Files/Android/Android Studio/jre/bin:/home/dereje/.local/bin:/home/dereje/.local/bin
 
 Yarn version: 
-  1.22.19
+  1.22.17
 
 Node version: 
-  18.13.0
+  16.14.0
 
 Platform: 
-  win32 x64
+  linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/expo-browser: Not found
-      at params.callback [as _callback] (C:\Users\ddest\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
-      at self.callback (C:\Users\ddest\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
-      at Request.emit (node:events:513:28)
-      at Request.<anonymous> (C:\Users\ddest\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
-      at Request.emit (node:events:513:28)
-      at IncomingMessage.<anonymous> (C:\Users\ddest\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
-      at Object.onceWrapper (node:events:627:28)
-      at IncomingMessage.emit (node:events:525:35)
-      at endReadableNT (node:internal/streams/readable:1359:12)
-      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
 
 npm manifest: 
   {
@@ -44,6 +35,8 @@ npm manifest:
       "expo-auth-session": "~3.8.0",
       "expo-random": "~13.0.0",
       "expo-status-bar": "~1.4.2",
+      "expo-updates": "~0.15.6",
+      "expo-web-browser": "~12.0.0",
       "native-base": "^3.4.25",
       "react": "18.1.0",
       "react-native": "0.70.5",
@@ -4049,6 +4042,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/expo-crypto/-/expo-crypto-12.0.0.tgz#015e47fec27b07098fcef3676c6bf8b20767860a"
     integrity sha512-2KC52eLYsXndDZOVFyr+K3Zs9wDgpqZ7F7fwAiUg+yNbE21CJrHKDFvo/Br0FAaDf/w9pUks5/qi1azB5sDzvg==
   
+  expo-eas-client@~0.4.0:
+    version "0.4.1"
+    resolved "https://registry.yarnpkg.com/expo-eas-client/-/expo-eas-client-0.4.1.tgz#4ccdafb5faeac97394fb3fa4c777ec22b2017f1d"
+    integrity sha512-bIj2rm6lw/iZAOAW5CSAxshSXi2oY+ORpHRp4ZdqSDuwA0RIa9jGyMm1Jhostjjz5y9k2uur5vtVqq6P3Bwx/Q==
+  
   expo-error-recovery@~4.0.1:
     version "4.0.1"
     resolved "https://registry.yarnpkg.com/expo-error-recovery/-/expo-error-recovery-4.0.1.tgz#3e3333e134c992c234539d3773fe78915c883755"
@@ -4068,6 +4066,11 @@ Lockfile:
     dependencies:
       fontfaceobserver "^2.1.0"
   
+  expo-json-utils@~0.4.0:
+    version "0.4.0"
+    resolved "https://registry.yarnpkg.com/expo-json-utils/-/expo-json-utils-0.4.0.tgz#47ae83a1cc973101d62371f94790e9ad39491751"
+    integrity sha512-lK6gjea72XTYafpKNNJaMrBK5dYAX8LFLXrp/M1MKJU4Zy7EHd2rKrLwop3GZts8VdwLHeVcMko79SAbhe3i5Q==
+  
   expo-keep-awake@~11.0.1:
     version "11.0.1"
     resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-11.0.1.tgz#ee354465892a94040ffe09901b85b469e7d54fb3"
@@ -4083,6 +4086,13 @@ Lockfile:
       invariant "^2.2.4"
       qs "^6.9.1"
       url-parse "^1.5.9"
+  
+  expo-manifests@~0.4.0:
+    version "0.4.0"
+    resolved "https://registry.yarnpkg.com/expo-manifests/-/expo-manifests-0.4.0.tgz#6fd44b6427e113f2eb9409ca46df95cbbea068df"
+    integrity sha512-IdZjIYDxx4nH0Gb3X4T4/2YknmR/jSLxymAS0m7SfJ9V7Vlu/y0p3lNwUys9/JzihxX9PDIuOi/Y4/uqL6TlXg==
+    dependencies:
+      expo-json-utils "~0.4.0"
   
   expo-modules-autolinking@1.0.2:
     version "1.0.2"
@@ -4114,6 +4124,34 @@ Lockfile:
     version "1.4.2"
     resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.4.2.tgz#14f2b9a6dc7d550578421f07e0046f5fafc2b403"
     integrity sha512-ZWjO6D4ARGYfAd3SWDD3STNudHDhyBZDZjhhseqoEmsf7bS9ykny8KKOhlzJW24qIQNPhkgdvHhaw9fQwMJy3Q==
+  
+  expo-structured-headers@~3.0.0:
+    version "3.0.1"
+    resolved "https://registry.yarnpkg.com/expo-structured-headers/-/expo-structured-headers-3.0.1.tgz#291596c61acd2a45839ad6c6798c3d5cfc1eb4e9"
+    integrity sha512-x6hkzuQL5HJoyB+xQyBf9M04ZUmrjFWqEW7gzIYWN/6LA+dgyaV4fF6U9++Re+GgGjF03vHJFqR1xYaosKKZYQ==
+  
+  expo-updates-interface@~0.8.0:
+    version "0.8.1"
+    resolved "https://registry.yarnpkg.com/expo-updates-interface/-/expo-updates-interface-0.8.1.tgz#baeeeb01a77439682432be83ba78bc2e00547c4e"
+    integrity sha512-1TPFCTQFHMZbltFGnxig3PbN/b6nO4T0RyL8XqdmYvQY0ElOCprZXQQ8vNDqeLYHgausG1lD4OyJwFzh2SNBSA==
+  
+  expo-updates@~0.15.6:
+    version "0.15.6"
+    resolved "https://registry.yarnpkg.com/expo-updates/-/expo-updates-0.15.6.tgz#99e3faa3e38312ebddb77afb697863fa1f1f6a03"
+    integrity sha512-g5BuCmWdyiLqFaVkVz+m7r6U7MHJrLKvqybs04H6ArMNpTEf6FhUwSzmnCyOkSSP35KFNkC/I0dYlgW3Vcf1sw==
+    dependencies:
+      "@expo/code-signing-certificates" "0.0.5"
+      "@expo/config" "~7.0.2"
+      "@expo/config-plugins" "~5.0.3"
+      "@expo/metro-config" "~0.5.0"
+      arg "4.1.0"
+      expo-eas-client "~0.4.0"
+      expo-manifests "~0.4.0"
+      expo-structured-headers "~3.0.0"
+      expo-updates-interface "~0.8.0"
+      fbemitter "^3.0.0"
+      resolve-from "^5.0.0"
+      uuid "^3.4.0"
   
   expo-web-browser@~12.0.0:
     version "12.0.0"
