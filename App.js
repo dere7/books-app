@@ -1,43 +1,112 @@
-import { NativeBaseProvider } from 'native-base'
-import Home from './src/screens/Home'
-import About from './src/screens/About'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import Ionicons from '@expo/vector-icons/Ionicons'
-import History from './src/screens/History'
-import MyLibrary from './src/screens/MyLibrary'
+import { NativeBaseProvider, Text } from 'native-base'
 import { NavigationContainer } from '@react-navigation/native'
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
+import {
+  MD3LightTheme as DefaultTheme,
+  Provider as PaperProvider,
+} from 'react-native-paper'
+import { Ionicons, MaterialIcons } from '@expo/vector-icons'
+import MyLibrary from './src/screens/MyLibrary'
+import History from './src/screens/History'
+import About from './src/screens/About'
+import HomeStackScreen from './src/screens/HomeStackScreen'
+import {
+  AppStateProvider,
+  setAuth,
+  setUser,
+  toggleLoading,
+  useAppState,
+} from './state'
+import Login from './src/screens/Login'
+import { useEffect } from 'react'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import { fetchUser } from './hooks'
+import Loading from './src/components/Loading'
+import { refreshAsync } from 'expo-auth-session'
 
-const Tab = createBottomTabNavigator()
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: 'blue',
+    secondary: 'yellow',
+  },
+}
+
+const Tab = createMaterialBottomTabNavigator()
+
+const TabScreen = () => (
+  <Tab.Navigator
+    shifting={true}
+    screenOptions={({ route }) => ({
+      tabBarIcon: ({ color }) => {
+        let iconName = route.name.toLocaleLowerCase()
+        if (route.name === 'About') iconName = 'info'
+        else if (route.name == 'HomeScreen') iconName = 'home'
+        else if (route.name === 'MyLibrary')
+          return <Ionicons name="ios-library" size={26} color={color} />
+
+        return <MaterialIcons name={iconName} size={26} color={color} />
+      },
+    })}
+  >
+    <Tab.Screen name="HomeScreen" component={HomeStackScreen} />
+    <Tab.Screen name="MyLibrary" component={MyLibrary} />
+    <Tab.Screen name="History" component={History} />
+    <Tab.Screen name="About" component={About} />
+  </Tab.Navigator>
+)
+
+const Main = () => {
+  const {
+    state: { user, skipLogin, loading },
+    dispatch,
+  } = useAppState()
+
+  useEffect(() => {
+    dispatch(toggleLoading())
+    ;(async () => {
+      try {
+        let auth = await AsyncStorage.getItem('auth')
+        auth = JSON.parse(auth)
+        if (auth) {
+          const user = await fetchUser(auth.accessToken)
+          dispatch(setUser(user))
+          dispatch(toggleLoading())
+        }
+      } catch (e) {
+        alert(e.message)
+      }
+      // .then((auth) => {
+      //   if (auth)
+      //     refreshAsync(
+      //       {
+      //         clientId:
+      //           '481485281548-tgvg9qj8f6kj2avkgau5sntahg0fg61c.apps.googleusercontent.com',
+      //         refreshToken: auth.refreshToken,
+      //       },
+      //       {
+      //         tokenEndpoint: 'www.googleapis.com/oauth2/v4/token',
+      //       }
+      //     )
+      // })
+    })()
+  }, [])
+  if (loading) return <Loading />
+  if (user||skipLogin) return <TabScreen />
+  return  <Login />
+}
+
 export default function App() {
   return (
-    <NavigationContainer>
-      <NativeBaseProvider>
-        <Tab.Navigator
-          screenOptions={({ route }) => ({
-            animation: 'fade_from_bottom',
-            tabBarIcon: ({ focused, color, size }) => {
-              let iconName
-              if (route.name === 'Home')
-                iconName = focused ? 'home-sharp' : 'home-outline'
-              else if (route.name === 'About') {
-                iconName = focused
-                  ? 'ios-information-circle'
-                  : 'ios-information-circle-outline'
-              } else if (route.name === 'MyLibrary')
-                iconName = focused ? 'ios-library' : 'ios-library-outline'
-              else if (route.name === 'History')
-                iconName = focused ? 'ios-time' : 'ios-time-outline'
-
-              return <Ionicons name={iconName} size={size} color={color} />
-            },
-          })}
-        >
-          <Tab.Screen name="Home" component={Home} options={{title: 'Popular Books'}} />
-          <Tab.Screen name="MyLibrary" component={MyLibrary} />
-          <Tab.Screen name="History" component={History} />
-          <Tab.Screen name="About" component={About} />
-        </Tab.Navigator>
-      </NativeBaseProvider>
-    </NavigationContainer>
+    <AppStateProvider>
+      <PaperProvider theme={theme}>
+        <NavigationContainer>
+          <NativeBaseProvider>
+            <Main />
+          </NativeBaseProvider>
+        </NavigationContainer>
+      </PaperProvider>
+    </AppStateProvider>
   )
 }

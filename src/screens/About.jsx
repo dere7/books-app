@@ -1,7 +1,7 @@
-import { Box, Text, VStack, Button } from 'native-base'
+import { Box, Text, VStack } from 'native-base'
 import Ionicons from '@expo/vector-icons/Ionicons'
 
-const About = ({ navigation }) => (
+const About = () => (
   <Box flex={1} justifyContent="center" alignItems="center">
     <VStack alignItems="center">
       <Ionicons
@@ -11,11 +11,14 @@ const About = ({ navigation }) => (
       />
       <Text fontSize={'md'}>Book App. Uses Google's Book API.</Text>
       <Text>©2023</Text>
-      <Text fontSize="md" color={'purple.500'}>
-        Made with 🤎 by
-        <Text highlight bold>
-          Group 1
-        </Text>
+      <Text fontSize="md" mt="4">
+        Made with 🤎 by Group-1 an
+      </Text>
+      <Text fontSize="md" color="amber.600" mx="8" textAlign="center">
+        Dereje Desta - Fatima Abayneh - Eden Zewdu
+      </Text>
+      <Text fontSize="md" color="amber.600" mx="8" textAlign="center">
+        Dibora Daba - Edlawit G/Hana
       </Text>
     </VStack>
   </Box>
