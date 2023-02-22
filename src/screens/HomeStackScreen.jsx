@@ -11,7 +11,6 @@ import Home from './Home'
 import Search from './Search'
 
 const HeaderRight = () => {
-  const {navigate} = useNavigation()
   const {
     state: { user },
     dispatch,
@@ -22,49 +21,46 @@ const HeaderRight = () => {
   }
   if (!user) return <LoginButton />
   return (
-    <HStack spane="2" alignItems={'center'}>
-      <IconButton icon={"magnify"} onPress={() => navigate('Search')} />
-      <Popover
-        w="48"
-        trigger={(triggerProps) => (
-          <Pressable {...triggerProps}>
-            <Avatar bg="green.200" size="sm" source={{ uri: user.picture }}>
-              {user.name
-                .split(' ')
-                .map((n) => n[0])
-                .join('')}
-            </Avatar>
-          </Pressable>
-        )}
-        offset={24}
-      >
-        <Popover.Content accessibilityLabel="Delete Customerd" w="56">
-          <Popover.Arrow />
-          <Popover.Header borderWidth={'0'}>{user.name}</Popover.Header>
-          <Popover.Footer justifyContent="flex-end">
-            <Button mode="contained-tonal" icon="logout" onPress={logout}>
-              Logout
-            </Button>
-          </Popover.Footer>
-        </Popover.Content>
-      </Popover>
-    </HStack>
+    <Popover
+      w="48"
+      trigger={(triggerProps) => (
+        <Pressable {...triggerProps}>
+          <Avatar bg="green.200" size="sm" source={{ uri: user.picture }}>
+            {user.name
+              .split(' ')
+              .map((n) => n[0])
+              .join('')}
+          </Avatar>
+        </Pressable>
+      )}
+      offset={24}
+    >
+      <Popover.Content accessibilityLabel="Delete Customerd" w="56">
+        <Popover.Arrow />
+        <Popover.Header borderWidth={'0'}>{user.name}</Popover.Header>
+        <Popover.Footer justifyContent="flex-end">
+          <Button mode="contained-tonal" icon="logout" onPress={logout}>
+            Logout
+          </Button>
+        </Popover.Footer>
+      </Popover.Content>
+    </Popover>
   )
 }
 const Stack = createNativeStackNavigator()
 const HomeStackScreen = () => {
-  const {
-    state: { user },
-    dispatch,
-  } = useAppState()
-  const auth = useAuth()
-
+  const { navigate } = useNavigation()
   return (
     <Stack.Navigator
       screenOptions={{
         animationDuration: 100,
         animation: 'slide_from_right',
-        headerRight: HeaderRight,
+        headerRight: () => (
+          <HStack spane="2" alignItems={'center'}>
+            <IconButton icon={'magnify'} onPress={() => navigate('Search')} />
+            <HeaderRight />
+          </HStack>
+        ),
       }}
     >
       <Stack.Screen

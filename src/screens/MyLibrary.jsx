@@ -1,5 +1,5 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { Box, Heading } from 'native-base'
+import { Box, Center, Heading } from 'native-base'
 import { useEffect, useState } from 'react'
 import { List } from 'react-native-paper'
 import { useAppState } from '../../state'
@@ -12,7 +12,7 @@ const LibraryHome = () => {
   const {
     state: { user, auth },
   } = useAppState()
-  if (!user) return <LoginButton />
+  if (!user) return <Center flex={1}><LoginButton /></Center>
   useEffect(() => {
     bookService.fetchLibraries(user.id).then(setLibraries).catch(console.dir)
   }, [])

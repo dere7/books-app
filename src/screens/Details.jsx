@@ -64,7 +64,7 @@ const Details = ({ navigation }) => {
             <HStack space="2" alignItems={'center'}>
               <Ionicons name="person" size={26} color="lightgray" />
               <Text fontSize="md" color="purple.400">
-                {authors.join(', ')}
+                {authors?.join(', ')}
               </Text>
             </HStack>
             <HStack space="2" alignItems={'center'}>

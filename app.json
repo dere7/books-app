@@ -2,6 +2,7 @@
   "expo": {
     "name": "book-app",
     "slug": "book-app",
+    "jsEngine": "hermes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,6 +20,7 @@
       "**/*"
     ],
     "ios": {
+      "jsEngine": "jsc",
       "bundleIdentifier": "com.dereje.bookApp",
       "supportsTablet": true
     },
@@ -31,6 +33,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1697033c-4b7d-49db-9036-3f3254fbb187"
+      }
     }
   }
 }

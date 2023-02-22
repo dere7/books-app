@@ -19,11 +19,8 @@ const BookList = () => {
   }, [])
 
   if (!books) return <Loading title="Loading Books" />
-  console.log(books.map(b => b.id))
   return (
     <VStack space="2">
-      <Text fontSize={"lg"}>found {books.length} books</Text>
-      <Divider />
       <FlatList
         data={books}
         renderItem={({ item }) => <BookItem book={item} />}

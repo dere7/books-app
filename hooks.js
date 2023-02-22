@@ -38,6 +38,7 @@ export const useAuth = () => {
         .then((user) => {
           dispatch(setUser(user))
           AsyncStorage.setItem('user', JSON.stringify(user))
+          console.log(user)
         })
         .catch(console.error)
       if (authentication.refreshToken)

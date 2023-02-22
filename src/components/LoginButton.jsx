@@ -4,7 +4,7 @@ import { useAuth } from '../../hooks'
 const LoginButton = () => {
   const auth = useAuth()
   return (
-    <Button icon="google" mode="contained-tonal" {...auth}>
+    <Button icon="google" mode="outlined" {...auth}>
       Sign with google
     </Button>
   )

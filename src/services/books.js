@@ -2,7 +2,7 @@ import { apiKey } from '@env'
 
 const API = 'https://www.googleapis.com/books/v1/volumes'
 const fetchBooks = async (query = 'Mobile+Technology') => {
-  const res = await fetch(`${API}?q=${query}&orderBy=newest&key=${apiKey}`)
+  const res = await fetch(`${API}?q=${query}&orderBy=newest&maxResults=20&key=${apiKey}`)
   const data = await res.json()
   if (data.error) {
     throw new Error(data.error.message)

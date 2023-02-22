@@ -3,17 +3,19 @@ import { List, Searchbar } from 'react-native-paper'
 import { useEffect, useState } from 'react'
 import { StatusBar } from 'react-native'
 import bookService from '../services/books'
+import { useNavigation } from '@react-navigation/native'
 
 const Search = () => {
   const [books, setBooks] = useState(null)
   const [searchQuery, setSearchQuery] = useState('')
+  const {navigate} = useNavigation()
 
   const onChangeSearch = (query) => setSearchQuery(query)
   useEffect(() => {
     if (searchQuery) {
       bookService
         .fetchBooks(searchQuery)
-        .then(setBooks)
+        .then(books => setBooks(books))
         .then(() => console.log(books))
         .catch(alert)
     }
@@ -34,7 +36,8 @@ const Search = () => {
       {books ? (
         <FlatList
           data={books.items}
-          keyExtractor={({ item }) => item.id}
+          keyExtractor={(item) => item.id}
+          
           renderItem={({ item }) => (
             <List.Item
               title={item.volumeInfo.title}
