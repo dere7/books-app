@@ -1,10 +1,10 @@
 import { Button } from 'react-native-paper'
-import { useAuth } from '../../hooks'
+import { toggleSkipLogin, useAppState } from '../../state'
 
 const LoginButton = () => {
-  const auth = useAuth()
+  const {dispatch} = useAppState()
   return (
-    <Button icon="google" mode="outlined" {...auth}>
+    <Button icon="google" mode="outlined" onPress={() => dispatch(toggleSkipLogin())}>
       Sign with google
     </Button>
   )

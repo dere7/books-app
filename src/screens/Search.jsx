@@ -23,7 +23,7 @@ const Search = () => {
   return (
     <VStack
       flex={1}
-      bgColor="purple.50"
+      bgColor="purple.500"
       style={{ paddingTop: StatusBar.currentHeight }}
     >
       <Searchbar

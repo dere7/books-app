@@ -2,7 +2,6 @@ import { createMaterialBottomTabNavigator } from "@react-navigation/material-bot
 import { Ionicons, MaterialIcons } from '@expo/vector-icons'
 import HomeStackScreen from "./HomeStackScreen"
 import MyLibrary from "./MyLibrary"
-import History from "./History"
 import About from "./About"
 
 const Tab = createMaterialBottomTabNavigator()
@@ -15,7 +14,6 @@ const TabScreen = () => (
         let iconName = route.name.toLocaleLowerCase()
         if (route.name === 'About') iconName = 'info'
         else if (route.name == 'HomeScreen') iconName = 'home'
-        else if (route.name == 'HistoryScreen') iconName = 'history'
         else if (route.name === 'MyLibrary')
           return <Ionicons name="ios-library" size={26} color={color} />
 
@@ -23,9 +21,8 @@ const TabScreen = () => (
       },
     })}
   >
-    <Tab.Screen name="HomeScreen" component={HomeStackScreen} />
+    <Tab.Screen name="HomeScreen" component={HomeStackScreen} options={{title: 'Home'}}/>
     <Tab.Screen name="MyLibrary" component={MyLibrary} />
-    <Tab.Screen name="HistoryScreen" component={History} />
     <Tab.Screen name="About" component={About} />
   </Tab.Navigator>
 )

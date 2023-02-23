@@ -5,6 +5,7 @@ const initialState = {
   auth: null,
   skipLogin: false,
   books: null,
+  libraries: null,
   loading: false,
   error: null,
 }
@@ -19,6 +20,8 @@ const reducer = (state, action) => {
         return {...state, skipLogin: !state.skipLogin}
     case 'SET_BOOKS':
         return {...state, books: action.payload}
+    case 'SET_LIBRARIES':
+        return {...state, libraries: action.payload}
     case 'TOGGLE_LOADING':
         return {...state, loading: !state.loading}
     case 'SET_ERROR':
@@ -32,6 +35,7 @@ export const setUser = (payload) => ({ type: 'SET_USER', payload})
 export const setAuth = (payload) => ({type: 'SET_AUTH', payload})
 export const toggleSkipLogin = () => ({type: 'TOGGLE_SKIP_LOGIN'})
 export const setBooks = (payload) => ({type: 'SET_BOOKS', payload})
+export const setLibraries = (payload) => ({type: 'SET_LIBRARIES', payload})
 export const toggleLoading = () => ({type: 'TOGGLE_LOADING'})
 export const setError = payload => ({type: 'SET_ERROR', payload})
 
