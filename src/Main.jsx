@@ -31,15 +31,23 @@ const Main = () => {
 
   useEffect(() => {
     if (response?.type === 'success') {
-      dispatch(setAuth(response.authentication))
-
+      const { authentication } = response
+      dispatch(setAuth(authentication))
+      console.log(1)
       const persistAuth = async () => {
-        await AsyncStorage.setItem(
-          'auth',
-          JSON.stringify(response.authentication)
-        )
+        console.log(2)
+        await AsyncStorage.setItem('auth', JSON.stringify(authentication))
+        console.log(3)
+        if (authentication.refreshToken) {
+          await AsyncStorage.setItem(
+            'refreshToken',
+            authentication.refreshToken
+          )
+          console.log('saved refresh token')
+        }
       }
       persistAuth()
+      console.log(4)
       console.log(auth)
       getUserData()
     }
@@ -47,24 +55,29 @@ const Main = () => {
 
   useEffect(() => {
     const getPersistedAuth = async () => {
+      console.log(5)
       const jsonValue = await AsyncStorage.getItem('auth')
       if (jsonValue != null) {
+        console.log(6)
         const authFromJson = JSON.parse(jsonValue)
         dispatch(setAuth(authFromJson))
         console.log(authFromJson)
 
         setRequireRefresh(
-          !AuthSession.TokenResponse.isTokenFresh({
-            expiresIn: authFromJson.expiresIn,
-            issuedAt: authFromJson.issuedAt,
-          })
+          !AuthSession.TokenResponse.isTokenFresh(
+            {
+              expiresIn: authFromJson.expiresIn,
+              issuedAt: authFromJson.issuedAt,
+            } && auth.refreshToken
+          )
         )
 
         if (requireRefresh) {
+          console.log(6)
           refreshToken()
         }
+        await getUserData()
       }
-      getUserData()
     }
     getPersistedAuth()
   }, [])
@@ -86,17 +99,19 @@ const Main = () => {
   const refreshToken = async () => {
     const clientId = Platform.OS === 'ios' ? iosClientId : androidClientId
     console.log(auth)
-    const tokenResult = await AuthSession.refreshAsync(
-      {
-        clientId: clientId,
-        refreshToken: auth.refreshToken,
-      },
-      {
-        tokenEndpoint: 'https://www.googleapis.com/oauth2/v4/token',
-      }
-    )
-
-    tokenResult.refreshToken = auth.refreshToken
+    const token = await AsyncStorage.getItem('refreshToken')
+    if (token) {
+      const tokenResult = await AuthSession.refreshAsync(
+        {
+          clientId: clientId,
+          refreshToken: auth.refreshToken,
+        },
+        {
+          tokenEndpoint: 'https://www.googleapis.com/oauth2/v4/token',
+        }
+      )
+      tokenResult.refreshToken = auth.refreshToken
+    }
 
     dispatch(setAuth(tokenResult))
     await AsyncStorage.setItem('auth', JSON.stringify(tokenResult))
@@ -104,6 +119,7 @@ const Main = () => {
   }
 
   if (loading) return <Loading title="loading data" />
+
   return user?.name || skipLogin ? (
     <TabScreen />
   ) : (

@@ -32,7 +32,7 @@ const Search = () => {
         onChangeText={onChangeSearch}
         value={searchQuery}
       />
-      <Divider color={'purple.200'} />
+      <Divider color={'purple.50'} />
       {books ? (
         <FlatList
           data={books.items}

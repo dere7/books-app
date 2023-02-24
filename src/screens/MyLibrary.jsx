@@ -50,6 +50,7 @@ const LibraryHome = () => {
       >
         {libraries.items.map((lib) => (
           <List.Accordion
+            expanded={expandedId === lib.id}
             id={String(lib.id)}
             left={(props) =>
               lib.access === 'PRIVATE' ? (
